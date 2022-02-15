@@ -58,12 +58,7 @@ resource apimLogger 'Microsoft.ApiManagement/service/loggers@2021-08-01' = {
     description: 'Application Insights for APIM'
     loggerType: 'applicationInsights'
     credentials:{
-      instrumentationKey: {{instrumentationKey}}
+      instrumentationKey: namedValueAppInsightsKey.properties.value
     }
   }
 }
-
-
-
-
-
