@@ -161,6 +161,7 @@ resource sohch04apim_sohch03_function_app_key 'Microsoft.ApiManagement/service/n
       'auto'
     ]
     secret: true
+    value: 'JOfi7wbPEcN85RHI48eghCI2uafbWVOjfzM3oMA4rjClKoGRXm77Mw=='
   }
 }
 
