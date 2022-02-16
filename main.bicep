@@ -138,7 +138,7 @@ resource sohch04apim_sohch03_function_app 'Microsoft.ApiManagement/service/backe
     description: 'sohch03-function-app'
     url: 'https://sohch03-function-app.azurewebsites.net/api'
     protocol: 'http'
-    resourceId: 'https://management.azure.com/subscriptions/ca9ae6cf-2ab2-48d0-981d-c1030fd74a64/resourceGroups/rg-open-hack-serverless-ch03/providers/Microsoft.Web/sites/sohch03-function-app'
+    resourceId: '${environment().resourceManager}/subscriptions/ca9ae6cf-2ab2-48d0-981d-c1030fd74a64/resourceGroups/rg-open-hack-serverless-ch03/providers/Microsoft.Web/sites/sohch03-function-app'
     credentials: {
       header: {
         'x-functions-key': [
