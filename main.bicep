@@ -1,5 +1,6 @@
 param location string = resourceGroup().location
 param prefix string
+param apimEmail string
 
 // Create the appInsights workspace
 resource logAnalyticsWorkspace 'Microsoft.OperationalInsights/workspaces@2020-10-01' = {
@@ -34,7 +35,7 @@ resource apim 'Microsoft.ApiManagement/service@2020-12-01' = {
   }
   properties:{
     virtualNetworkType: 'None'
-    publisherEmail: 'rusmith@microsoft.com'
+    publisherEmail: apimEmail
     publisherName: 'russ'
   }
 }
@@ -148,7 +149,6 @@ resource sohch04apim_sohch03_function_app 'Microsoft.ApiManagement/service/backe
     }
   }
 }
-
 
 resource sohch04apim_sohch03_function_app_key 'Microsoft.ApiManagement/service/namedValues@2021-08-01' = {
   parent: apim
