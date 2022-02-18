@@ -276,7 +276,7 @@ resource sohch04apim_rating_get_getrating 'Microsoft.ApiManagement/service/apis/
         name: 'id'
         required: true
         values: []
-        type: null
+        type: 'string'
       }
     ]
     responses: []
